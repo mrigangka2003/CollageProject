@@ -3,9 +3,9 @@ import Home from "./Home"
 import GetData from "./GetData" 
 import About from "./About" 
 
-export  {
+export {
     Header,
     Home,
     GetData,
     About
-}
+};

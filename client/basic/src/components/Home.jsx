@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+
 function Home() {
   const [message, setMessage] = useState("");
   const [name, setName] = useState("");
