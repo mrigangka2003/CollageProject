@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
   const [message, setMessage] = useState("");
@@ -7,6 +8,8 @@ function Home() {
   const [email, setEmail] = useState("");
   const [department, setDepartment] = useState("");
   const [error,setError] = useState("") ;
+
+  const navigate = useNavigate() ;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -33,12 +36,13 @@ function Home() {
       });
 
       if (!response.ok) {
-        setError("")
+        {error && setError("")}
         setError("Network error")
       }
 
       const data = await response.json();
-      setMessage(data.message); // Assuming the backend sends a response with a message
+      setMessage(data.message); 
+      navigate('/getdata') ;
     } catch (error) {
       console.error("Error:", error);
     }
