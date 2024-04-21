@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 function Home() {
   const [message, setMessage] = useState("");
   const [name, setName] = useState("");
-  const [id, setId] = useState("");
+  const [studentId, setStudentId] = useState("");
   const [email, setEmail] = useState("");
   const [department, setDepartment] = useState("");
   const [error,setError] = useState("") ;
@@ -16,14 +16,14 @@ function Home() {
 
     const formData = {
       name: name,
-      id: id,
+      studentId: studentId,
       email: email,
       department: department
     };
 
     setName("")
     setEmail("")
-    setId("")
+    setStudentId("")
     setDepartment("")
 
     try {
@@ -90,8 +90,8 @@ function Home() {
           type="text"
           name="id"
           placeholder="Student ID"
-          value={id}
-          onChange={(e) => setId(e.target.value)}
+          value={studentId}
+          onChange={(e) => setStudentId(e.target.value)}
           required
         />
         <input

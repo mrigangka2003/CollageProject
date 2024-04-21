@@ -13,7 +13,7 @@ const About = () => {
           <p>22IUT0020120</p>
         </div>
         <div style={{backgroundColor:"white" , color:"black", margin:"10px" , padding: "5px" , borderRadius:"10px"}}>
-          <h5>Snehabita Paul</h5>
+          <h5>Snehabita Das</h5>
           <p>21IUT0010112</p>
         </div>
         <div style={{backgroundColor:"white" , color:"black", margin:"10px" , padding: "5px" , borderRadius:"10px"}}>
