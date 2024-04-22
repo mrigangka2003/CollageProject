@@ -1,36 +1,49 @@
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <div style={{display:"flex" , flexDirection :"column" , flexWrap :"wrap"}}>
-      Made by
-      <div style={{display:"flex" ,margin:"0.8px" , padding : " 2px"}}>
-        <div style={{backgroundColor:"white" , color:"black", margin:"10px" , padding: "5px" , borderRadius:"10px"}}>
-        <h5>Mrigangka Datta</h5>
-          <p>21IUT0010127</p>
-        </div>
-        <div style={{backgroundColor:"white" , color:"black", margin:"10px" , padding: "5px" , borderRadius:"10px"}}>
-          <h5>Ananya Debnath</h5>
-          <p>22IUT0020120</p>
-        </div>
-        <div style={{backgroundColor:"white" , color:"black", margin:"10px" , padding: "5px" , borderRadius:"10px"}}>
-          <h5>Snehabita Das</h5>
-          <p>21IUT0010112</p>
-        </div>
-        <div style={{backgroundColor:"white" , color:"black", margin:"10px" , padding: "5px" , borderRadius:"10px"}}>
-          <h5>Manash Das</h5>
-          <p>21IUT0020123</p>
-        </div>
-        <div style={{backgroundColor:"white" , color:"black", margin:"10px" , padding: "5px" , borderRadius:"10px"}}>
-          <h5>Pinki Das</h5>
-          <p>22IUT0020149</p>
-        </div>
-        <div style={{backgroundColor:"white" , color:"black", margin:"10px" , padding: "5px" , borderRadius:"10px"}}>
-          <h5>Sayan Banik</h5>
-          <p>21IUT0010114</p>
+    <>
+      <div style={{ display: "flex", flexDirection: "column" }}>
+        <h3>Mrigangka Datta</h3>
+        <div >
+          <div className="dpAndPara" style={{ margin: "5px", padding: "5px", display: "flex" }}>
+            <p style={{ margin: "5px", padding: "5px", display: "flex" }}>
+              this project is made to get some concepts clear and to get good
+              marks in an internal exam
+            </p>
+            <img
+              src="https://pbs.twimg.com/profile_images/1767243951273394176/b9sLNkJR_400x400.jpg"
+              alt=""
+              width={150}
+            />
+          </div>
+          <div style={{ margin: "5px", padding: "5px" }}>
+            <Link
+              style={{ margin: "5px", padding: "5px" }}
+              to={"https://github.com/mrigangka2003"}
+              target="_blank"
+            >
+              github
+            </Link>
+            <Link
+              style={{ margin: "5px", padding: "5px" }}
+              to={"https://twitter.com/mrigangkadatta"}
+              target="_blank"
+            >
+              Twitter
+            </Link>
+            <Link
+              style={{ margin: "5px", padding: "5px" }}
+              to={"https://www.linkedin.com/in/mrigangka/"}
+              target="_blank"
+            >
+              LinkedIn
+            </Link>
+          </div>
         </div>
       </div>
-    </div>
-  )
-}
+    </>
+  );
+};
 
-export default About
+export default About;
